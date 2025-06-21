@@ -1,21 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import { name } from '../constants';
 import Footer from './Footer';
+
+// TEMP FIX: Hardcoded name instead of import
+const name = "Saketh"; // Replace this once the constants file is fixed
 
 const Home = () => {
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-  if (name && index < name.length) {
-    const timeout = setTimeout(() => {
-      setText((prev) => prev + name[index]);
-      setIndex((prev) => prev + 1);
-    }, 150);
-    return () => clearTimeout(timeout);
-  }
-}, [index]);
-
+    if (name && index < name.length) {
+      const timeout = setTimeout(() => {
+        setText((prev) => prev + name[index]);
+        setIndex((prev) => prev + 1);
+      }, 150);
+      return () => clearTimeout(timeout);
+    }
+  }, [index]);
 
   return (
     <div className='area relative z-0 bg-black w-screen h-screen'>
