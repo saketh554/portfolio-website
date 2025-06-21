@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-const VisitorCounter = () => {
+function VisitorCounter() {
   const [count, setCount] = useState(null);
 
   useEffect(() => {
-    const url = 'https://api.counterapi.dev/v2/portfolio-team/website-visits/up';
+    const url =
+      "https://api.counterapi.dev/v2/portfolio-team/website-visits/up";
 
     fetch(url)
       .then((res) => res.json())
@@ -13,7 +14,7 @@ const VisitorCounter = () => {
           setCount(data.data.up_count);
         }
       })
-      .catch((error) => console.error('Error fetching counter:', error));
+      .catch((error) => console.error("Error fetching counter:", error));
   }, []);
 
   return (
@@ -25,6 +26,6 @@ const VisitorCounter = () => {
       )}
     </div>
   );
-};
+}
 
 export default VisitorCounter;

@@ -1,13 +1,13 @@
-import React, { Suspense, lazy } from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import React, { Suspense, lazy } from "react";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Experience from './components/Experience';
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Experience from "./components/Experience";
 
-const Home = lazy(() => import('./components/Home'));
+const Home = lazy(() => import("./components/Home"));
 
-const App = () => {
+function App() {
   return (
     <HashRouter>
       <Navbar />
@@ -15,7 +15,13 @@ const App = () => {
         <Route
           path="/"
           element={
-            <Suspense fallback={<div className="text-white text-center mt-10">Loading home...</div>}>
+            <Suspense
+              fallback={
+                <div className="text-white text-center mt-10">
+                  Loading home...
+                </div>
+              }
+            >
               <Home />
             </Suspense>
           }
@@ -25,6 +31,6 @@ const App = () => {
       <Footer />
     </HashRouter>
   );
-};
+}
 
 export default App;

@@ -2,7 +2,7 @@
   "name": "portfolio-saketh",
   "version": "0.1.0",
   "private": true,
-"homepage": "https://saketh554.github.io/portfolio-website",
+  "homepage": "https://saketh554.github.io/portfolio-website",
   "dependencies": {
     "@emailjs/browser": "^4.1.0",
     "@react-three/drei": "^9.97.5",
@@ -21,14 +21,16 @@
     "react-vertical-timeline-component": "^3.6.0",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
+ "scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "lint": "eslint ./src --ext .js,.jsx"
+}
+,
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -51,13 +53,14 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@eslint/js": "^9.29.0",
     "ajv": "^8.11.0",
-    "eslint": "^8.57.1",
+    "eslint": "^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^10.1.5",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^5.5.0",
-    "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "gh-pages": "^6.3.0",
     "globals": "^16.2.0",
     "prettier": "^3.5.3",

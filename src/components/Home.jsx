@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import Footer from './Footer';
+import React, { useState, useEffect } from "react";
+import Footer from "./Footer";
 
 // TEMP FIX: Hardcoded name instead of import
 const name = "Saketh"; // Replace this once the constants file is fixed
 
-const Home = () => {
-  const [text, setText] = useState('');
+function Home() {
+  const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -19,28 +19,40 @@ const Home = () => {
   }, [index]);
 
   return (
-    <div className='area relative z-0 bg-black w-screen h-screen'>
+    <div className="area relative z-0 bg-black w-screen h-screen">
       <ul className="circles">
-        <li></li><li></li><li></li><li></li><li></li>
-        <li></li><li></li><li></li><li></li><li></li>
+        <li />
+        <li />
+        <li />
+        <li />
+        <li />
+        <li />
+        <li />
+        <li />
+        <li />
+        <li />
       </ul>
-      <div className='hero relative h-[calc(100vh)] flex justify-center items-center text-white' id='hero'>
-        <div className='pt-4 h-36 backdrop-blur-sm rounded-3xl'>
-          <h1 className='text-6xl sm:text-7xl font-extrabold mt-2'>
+      <div
+        className="hero relative h-[calc(100vh)] flex justify-center items-center text-white"
+        id="hero"
+      >
+        <div className="pt-4 h-36 backdrop-blur-sm rounded-3xl">
+          <h1 className="text-6xl sm:text-7xl font-extrabold mt-2">
             Hi, I'm&nbsp;
-            <span className='text-yellow-200 font-extrabold'>
+            <span className="text-yellow-200 font-extrabold">
               {text}
-              <span className='animate-pulse'>|</span>
+              <span className="animate-pulse">|</span>
             </span>
           </h1>
-          <p className='mt-3 text-xl'>
-            I build scalable systems and optimize performance with full-stack expertise.
+          <p className="mt-3 text-xl">
+            I build scalable systems and optimize performance with full-stack
+            expertise.
           </p>
         </div>
       </div>
       <Footer />
     </div>
   );
-};
+}
 
 export default Home;
