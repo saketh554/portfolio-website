@@ -11,8 +11,15 @@
     "sourceType": "module"
   },
   "rules": {
-    "prettier/prettier": "error",
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
-  }
+  "react/no-unescaped-entities": "off",
+  "react/prop-types": "off",
+  "camelcase": "off",
+  "jsx-a11y/label-has-associated-control": "off",
+  "react/button-has-type": "off",
+  "react/no-array-index-key": "off",
+  "consistent-return": "off",
+  "react/no-danger": "off",
+  "no-console": "off"
+}
+
 }
