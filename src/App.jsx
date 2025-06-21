@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -9,7 +9,7 @@ const Home = lazy(() => import('./components/Home'));
 
 const App = () => {
   return (
-    <BrowserRouter basename="/portfolio-website">
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route
@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/experience" element={<Experience />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
