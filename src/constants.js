@@ -1,49 +1,38 @@
 
-export const services = [
-    {
-        title: "Technology Enthusiast",
-        icon: 'https://csgeeek.github.io/web.png',
-    },
-    {
-        title: "Software Engineer",
-        icon: 'https://csgeeek.github.io/web.png',
-    },
-    {
-        title: "Photographer",
-        icon: 'https://csgeeek.github.io/web.png',
-    },
-];
 
 export const name = 'Saketh';
 
 export const experiences = [
-    {
-        'company': 'Futures First',
-        'role': 'Quantitative Analyst Intern',
-        'duration': 'Jan 2023-Jul 2023',
-        'logo': 'https://futuresfirst.com/wp-content/uploads/2019/12/ff.png',
-        'points': [
-            '📊 Designed and developed a trader dashboard using the MERN stack, providing intuitive data visualization and seamless interaction to support trading strategies.',
-            '🧮 Created high-performance backend APIs and integrated advanced predictive models, enhancing real-time trading reliability and market analysis accuracy.',
-            '📈 Analyzed over 500,000 data points using Python and R, generating actionable insights that optimized trading performance and profitability.',
-            'Implemented data security for the company’s product to provide role-based access control ⚙️.'
-        ],
-        'url': 'https://futuresfirst.com/',
-    },
-    {
-        'company': 'Intech Software Solutions',
-        'role': 'Software Engineer',
-        'duration': 'Jun 2021 - Nov 2022',
-        'logo': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmQML2WrJvhyr9Lp4gZ43wubkTdpPu7VWCHw&s',
-        'points': [
-            '🚀 Developed a web application for universities and hospitals to streamline research workflows, improving efficiency and saving researchers significant time.',
-            '🛠️ Engineered and optimized microservices with Node.js, React, and PostgreSQL, achieving a 25% improvement in data retrieval speed and a 30% boost in scalability.',
-            '🌐 Collaborated with cross-functional teams to design dynamic dashboards and implement custom client features, leveraging AWS for deployments and Azure CI/CD pipelines for automation. ',
-            '✅ Contributed to Agile processes, participating in code reviews, sprint planning, and collaboration meetings to ensure timely delivery and code quality.'
-        ],
-        'url': 'https://www.intecomp.org/',
-    },
-]
+  {
+    company: 'UMB Financial',
+    role: 'Software Developer',
+    duration: 'May 2024 - Present',
+    logo: 'https://mms.businesswire.com/media/20240429502428/en/2112157/22/UMB_logo.jpg',
+    points: [
+      'Built a cloud-based financial platform using <span class="text-green-300">Java EE</span>, <span class="text-green-300">Spring Boot</span>, and <span class="text-green-300">MongoDB</span>, ensuring high scalability, availability, and real-time performance across products like QuickBooks and Mint.',
+      'Developed reusable <span class="text-green-300">React</span> components (tables, charts, modals) to streamline UI consistency across budgeting and tax modules, improving frontend maintainability by 40%.',
+      'Designed a <span class="text-green-300">microservices</span> architecture for features like user management and analytics, improving deployment efficiency and reducing cross-service dependencies.',
+      'Deployed services on <span class="text-green-300">AWS (EC2, S3)</span> with event-driven workflows via <span class="text-green-300">Apache Kafka</span>, enhancing scalability and achieving 99.9% uptime for real-time transaction updates.',
+      'Automated DevOps workflows using <span class="text-green-300">GitHub Actions</span> for <span class="text-green-300">Docker</span> cleanup, test coverage, and <span class="text-green-300">Maven</span> builds, increasing CI/CD pipeline consistency and speed.'
+    ],
+    url: 'https://www.umb.com/',
+  },
+  {
+    company: 'Cognizant',
+    role: 'Software Developer',
+    duration: 'Jun 2021 - Aug 2023',
+    logo: 'https://www.eisgroup.com/wp-content/uploads/2022/03/cog_prim_lg_hrz_rgb_pos_2022.png',
+    points: [
+      'Developed scalable microservices using <span class="text-green-300">Spring Boot</span>, <span class="text-green-300">Spring Cloud</span>, and <span class="text-green-300">Eureka</span>, ensuring high availability and smooth service communication in distributed systems.',
+      'Engineered responsive web apps with <span class="text-green-300">React</span>, <span class="text-green-300">Redux</span>, and modern <span class="text-green-300">JavaScript</span>, improving mobile engagement by 5% and reducing bounce rates by 20%.',
+      'Boosted <span class="text-green-300">MySQL</span> database performance through indexing, query optimization, and horizontal sharding, achieving a 25% throughput increase under peak loads.',
+      'Exposed and secured APIs using <span class="text-green-300">Azure API Management</span>, integrating third-party services (payment gateways, email) with robust monitoring and versioning.',
+      'Modernized legacy systems by migrating <span class="text-green-300">JSP</span> + <span class="text-green-300">Struts</span> views to <span class="text-green-300">React</span>, and automated API testing using <span class="text-green-300">Postman</span> in the CI pipeline to improve release quality.'
+    ],
+    url: 'https://www.cognizant.com/us/en',
+  }
+];
+
 
 
 

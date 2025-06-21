@@ -4,7 +4,6 @@ import 'react-vertical-timeline-component/style.min.css';
 import { experiences } from '../constants';
 import Footer from './Footer';
 
-
 const Experience = () => {
   return (
     <div className='experience bg-black w-screen text-white pt-4 pt-16 overflow-x-hidden' id='experience'>
@@ -15,13 +14,14 @@ const Experience = () => {
       <VerticalTimeline className='mt-9'>
         {experiences.map((experience) => (
           <VerticalTimelineElement
+            key={experience.company}
             className="relative vertical-timeline-element--work"
-            contentStyle={{ background: "#1d1836", color: "#fff", }}
+            contentStyle={{ background: "#1d1836", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  #232631" }}
             date={experience.duration}
             iconStyle={{ background: '#fff' }}
             icon={
-              <a className='flex justify-center items-center w-full h-full' href={experience.url} target='_blank'>
+              <a className='flex justify-center items-center w-full h-full' href={experience.url} target='_blank' rel='noreferrer'>
                 <img
                   src={experience.logo}
                   alt={experience.company}
@@ -45,17 +45,16 @@ const Experience = () => {
                 <li
                   key={`experience-point-${index}`}
                   className='text-white-100 text-[14px] pl-1 tracking-wider'
-                >
-                  {point}
-                </li>
+                  dangerouslySetInnerHTML={{ __html: point }}
+                />
               ))}
             </ul>
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
-      <Footer/>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default Experience;
