@@ -9,7 +9,7 @@ const Home = lazy(() => import('./components/Home'));
 
 const App = () => {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename="/portfolio-website">
       <Navbar />
       <Routes>
         <Route
