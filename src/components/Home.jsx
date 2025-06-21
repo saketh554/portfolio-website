@@ -14,7 +14,7 @@ const Home = () => {
     }, 150);
     return () => clearTimeout(timeout);
   }
-}, [index, name]);
+}, [index]);
 
 
   return (
