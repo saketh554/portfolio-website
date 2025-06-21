@@ -14,7 +14,7 @@ const About = () => {
 
 I love solving complex engineering problems and thrive on building clean, efficient, and maintainable systems. At UMB Financial and Cognizant, I’ve delivered robust solutions that power real-world financial platforms.
 
-Check out my coding journey on <a className='text-green-300 hover:text-green-500 duration-300' href='https://leetcode.com/u/sakethnew/' target='_blank'>LeetCode</a> 💻 and connect with me on <a className='text-green-300 hover:text-green-500 duration-300' href='https://www.linkedin.com/in/saketh-reddy-aa06b622b/' target='_blank'>LinkedIn</a> 🚀
+Check out my coding journey on <a className='text-green-300 hover:text-green-500 duration-300' href='https://leetcode.com/u/sakethnew/' target='_blank'  rel="noreferrer">LeetCode</a> 💻 and connect with me on <a className='text-green-300 hover:text-green-500 duration-300' href='https://www.linkedin.com/in/saketh-reddy-aa06b622b/' target='_blank'  rel="noreferrer">LinkedIn</a> 🚀
 
 
           </p>
