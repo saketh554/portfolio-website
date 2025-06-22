@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Footer from "./Footer";
 
-// TEMP FIX: Hardcoded name instead of import
-const name = "Saketh"; // Replace this once the constants file is fixed
+const name = "Saketh";
 
 function Home() {
   const [text, setText] = useState("");
@@ -19,21 +17,17 @@ function Home() {
   }, [index]);
 
   return (
-    <div className="area relative z-0 bg-black w-screen h-screen">
-      <ul className="circles">
-        <li />
-        <li />
-        <li />
-        <li />
-        <li />
-        <li />
-        <li />
-        <li />
-        <li />
-        <li />
-      </ul>
+    <div className="relative w-full min-h-screen overflow-hidden bg-black text-white">
+      {/* Background only on Home */}
+      <div className="area absolute top-0 left-0 w-full h-full -z-10">
+        <ul className="circles">
+          <li /><li /><li /><li /><li />
+          <li /><li /><li /><li /><li />
+        </ul>
+      </div>
+
       <div
-        className="hero relative h-[calc(100vh)] flex justify-center items-center text-white"
+        className="hero h-[calc(100vh)] flex justify-center items-center text-white"
         id="hero"
       >
         <div className="pt-4 h-36 backdrop-blur-sm rounded-3xl">
@@ -50,7 +44,6 @@ function Home() {
           </p>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

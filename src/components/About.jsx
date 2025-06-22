@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import ButtonLink from "./ButtonLink";
-import Footer from "./Footer";
+
 
 function About() {
   return (
@@ -108,7 +108,7 @@ function About() {
           </div>
         </div>
       </div>
-      <Footer />
+
     </div>
   );
 }

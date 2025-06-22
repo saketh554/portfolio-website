@@ -3,7 +3,7 @@ import sneaker from "../assets/sneaker.png";
 import simon from "../assets/simon.png";
 import copeople from "../assets/n.png";
 import drum from "../assets/drum.png";
-import Footer from "./Footer";
+
 
 function ProjectCard({ image, title, description, git, technologies }) {
   return (
@@ -59,7 +59,7 @@ function Projects() {
           />
         ))}
       </div>
-      <Footer />
+      
     </div>
   );
 }
